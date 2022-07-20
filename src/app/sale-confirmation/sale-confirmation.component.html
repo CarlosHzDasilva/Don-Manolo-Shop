@@ -1,0 +1,20 @@
+<div class="confirmation-container">
+  <div class="callback-cart" *ngIf="cart.length === 0">
+    <h3>Parece que aún no has comprado nada, ¡vuelve a la tienda y escoge lo que más te guste!</h3>
+    <button class="create-button" (click)="navigateToList()">MOSTRAR LISTA DE ITEMS</button>
+  </div>
+  <ul class="sale-confirmation" *ngIf="cart.length !== 0">
+    <li *ngFor="let item of cart">
+      <p><strong>{{ item.name }}</strong> x{{ item.amount }} - {{ item.price | currency:'EUR':'symbol':'1.2-2'}}/ud</p>
+    </li>
+    <li>
+      <p><strong>Total a pagar:</strong> {{ getPrice() | currency:'EUR':'symbol':'1.2-2' }}</p>
+    </li>
+    <li>
+      <p><strong>Usuario:</strong> {{ details.name }} {{ details.surname }}</p>
+      <p><strong>Email:</strong> {{ details.email }}, <strong>Teléfono:</strong> {{ details.telephone }}</p>
+      <p><strong>Dirección:</strong> {{ details.street }}, {{ details.door }}, {{ details.zip }}, {{ details.province }}</p>
+    </li>
+  </ul>
+  <button *ngIf="cart.length !== 0" class="create-button" (click)="navigateToInit()">VUELTA AL INICIO</button>
+</div>

@@ -1,0 +1,17 @@
+<div class="item-card">
+  <img class="item-image" src="../../assets/{{item.image}}">
+  <h3><strong>Nombre:</strong> {{item.name}}</h3>
+  <input type="text" placeholder="{{item.name}}" [(ngModel)]="item.name">
+  <p><strong>Descripción:</strong> {{item.description}}</p>
+  <input type="text" placeholder="{{item.description}}" [(ngModel)]="item.description">
+  <p><strong>Precio:</strong> {{item.price}}</p>
+  <input type="number" placeholder="{{item.price}}" [(ngModel)]="item.price">
+  <p><strong>Stock:</strong> {{item.stock}}</p>
+  <input type="number" placeholder="{{item.stock}}" [(ngModel)]="item.stock">
+  <p><strong>Fecha de caducidad:</strong> {{item.expirationTime}}</p>
+  <input type="date" placeholder="{{item.expirationTime}}" [(ngModel)]="item.expirationTime">
+  <div class="button-group">
+    <button class="create-button" (click)="updateItem(item)">MODIFICAR</button>
+    <button class="dangerous-button" (click)="navigateToList()">CANCELAR</button>
+  </div>
+</div>

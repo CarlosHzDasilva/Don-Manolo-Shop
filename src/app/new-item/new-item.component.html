@@ -1,0 +1,16 @@
+<div class="item-card">
+  <form class="new-form">
+    <label for="name">Nombre</label>
+    <input name="name" type="text" [(ngModel)]="newItem.name">
+    <label for="description">Descripción</label>
+    <input name="description" type="text" [(ngModel)]="newItem.description">
+    <label for="price">Precio</label>
+    <input name="price" type="number" [(ngModel)]="newItem.price">
+    <label for="stock">Stock</label>
+    <input name="stock" type="number" [(ngModel)]="newItem.stock">
+    <label for="expirationTime">Fecha de caducidad</label>
+    <input name="expirationTime" type="date" [(ngModel)]="newItem.expirationTime">
+    <button class="create-button" type="reset" (click)="createNewItem(newItem)">Enviar nuevo Item</button>
+  </form>
+  <button class="dangerous-button" routerLink="/home">CANCELAR</button>
+</div>

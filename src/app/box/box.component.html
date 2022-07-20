@@ -1,0 +1,19 @@
+<div class="item-card" (mouseover)="itemSelected(item)" (mouseout)="itemSelected(item)" [class.selected]="item.selected" [class.out-of-stock]="item.stock <= 0">
+  <img class="item-image" src="../../assets/{{item.image}}" [alt]="item.name">
+  <h3>{{item.name | uppercase}}</h3>
+  <div>
+    <p><strong>Sr. Burns:</strong> "{{item.description}}"</p>
+    <p><strong>Precio:</strong> {{item.price | currency:'EUR':'symbol':'1.2-2'}}</p>
+    <p>Un soborno no tiene precio</p>
+  </div>
+  <div class="button-group">
+    <button (click)="downQuantity(item)" [disabled]="item.stock === 0">-</button>
+    <input type="number" placeholder="0" [(ngModel)]="item.quantity" [disabled]="item.stock === 0">
+    <button (click)="upQuantity(item)" [disabled]="item.stock === 0" (click)="boxCheck(item)">+</button>
+  </div>
+  <div class="item-price-expiration" [class.out-of-stock]="item.stock <= 0">
+    <p *ngIf="item.stock > 0"><strong>¡Solamente hay {{item.stock}}!</strong></p>
+    <p *ngIf="item.stock === 0"><strong>Vaya, has elegido la caja... Aceptar sobornos está bastante mal.</strong></p>
+  </div>
+  <button *ngIf="item.stock !== 0" class="create-button">AÑADIR AL CARRITO</button>
+</div>

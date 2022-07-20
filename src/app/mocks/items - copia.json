@@ -1,0 +1,95 @@
+{
+  "item-list": [
+    {
+      "id": 1,
+      "name": "Artefacto extraño",
+      "description": "Un artefacto muy extraño, ampliemos la descripción",
+      "stock": 1,
+      "price": 150,
+      "expirationTime": "22/10/2150",
+      "image": "artefacto1.jpg",
+      "selected": false,
+      "quantity": 0
+    },
+    {
+      "id": 2,
+      "name": "Artefactos menos extraños",
+      "description": "Unos artefactos menos extraños",
+      "stock": 7,
+      "price": 75,
+      "expirationTime": "22/10/2150",
+      "image": "artefacto2.jpg",
+      "selected": false,
+      "quantity": 0
+    },
+    {
+      "id": 3,
+      "name": "Navaja gnómica",
+      "description": "Seguro que quieres una por su resonador armónico... O quizás por su rascaespaldas.",
+      "stock": 25,
+      "price": 18.95,
+      "expirationTime": null,
+      "image": "navaja.jpg",
+      "selected": false,
+      "quantity": 0
+    },
+    {
+      "id": 4,
+      "name": "Vial de antimateria",
+      "description": "Solo puedes comprar esto si te lo ha recetado tu médico. Se vende en viajes de 1 mg.",
+      "stock": 3,
+      "price": 59290000000,
+      "expirationTime": "25/12/2050",
+      "image": "antimateria.jpg",
+      "selected": false,
+      "quantity": 0
+    },
+    {
+      "id": 5,
+      "name": "Poncho andino",
+      "description": "Un poncho de lana de llama, protege del frío y del calor, y tiene un estampado maravilloso.",
+      "stock": 12,
+      "price": 30,
+      "expirationTime": null,
+      "image": "poncho.jpg",
+      "selected": false,
+      "quantity": 0
+    },
+    {
+      "name": "Un objeto",
+      "description": "Esta es su descripción, también se puede editar",
+      "price": 15,
+      "stock": 16,
+      "expirationTime": "2039-10-05",
+      "image": "default.jpg",
+      "selected": false,
+      "quantity": 0,
+      "id": 6
+    },
+    {
+      "name": "Artefacto de prueba 3",
+      "description": "Es un objeto para editar 3",
+      "price": "10",
+      "stock": 15,
+      "expirationTime": "2022-05-03",
+      "image": "default.jpg",
+      "selected": false,
+      "quantity": 0,
+
+      "id": 7
+    }
+  ],
+  "the-box": [
+    {
+      "id": 3,
+      "name": "La caja",
+      "description": "Pueden elegir entre la lavadora o la secadora que les muestra el atractivo Smithers... O pueden cambiar ambas cosas por lo que hay en esta caja.",
+      "stock": 1,
+      "price": 0,
+      "expirationTime": null,
+      "image": "caja.jpg",
+      "selected": false,
+      "quantity": 0
+    }
+  ]
+}

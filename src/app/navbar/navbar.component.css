@@ -1,0 +1,25 @@
+.dangerous-button {
+  margin-top: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 5px;
+  background-color: rgb(242, 98, 98);
+}
+
+.create-button {
+  margin-top: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 5px;
+  background-color: rgb(114, 235, 114);
+}
+
+.button-group {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}

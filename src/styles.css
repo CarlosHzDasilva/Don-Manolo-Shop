@@ -1,0 +1,61 @@
+html {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: rgb(223, 227, 255);
+}
+
+body {
+  margin: 0px;
+  padding: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Para deshabilitar las flechas de los input con type="number" */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+app-new-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+app-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+app-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+app-item-edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+app-box {
+  display: flex;
+  justify-content: center;
+  align: center;
+}
+
+app-cart-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

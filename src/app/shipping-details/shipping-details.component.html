@@ -1,0 +1,39 @@
+<div class="total-price">
+  <strong>Total a pagar:</strong> {{ getTotalPrice() | currency:'EUR':'symbol':'1.2-2'}}
+</div>
+
+<div class="shipping">
+  <div class="detail-data">
+    <label for="name">Nombre:</label>
+    <input name="name" type="text" pattern="[A-Za-zÀ-ÿ ]{2,50}" [(ngModel)]="shippingDetails.name" required>
+  </div>
+  <div class="detail-data">
+    <label for="name">Apellidos:</label>
+    <input name="name" type="text" pattern="[A-Za-zÀ-ÿ ]{2,50}" [(ngModel)]="shippingDetails.surname" required>
+  </div>
+  <div class="detail-data">
+    <label for="name">Número de teléfono:</label>
+    <input name="name" type="tel" pattern="[0-9]{9}" [(ngModel)]="shippingDetails.telephone" required>
+  </div>
+  <div class="detail-data">
+    <label for="name">Email:</label>
+    <input name="name" type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" [(ngModel)]="shippingDetails.email" required>
+  </div>
+  <div class="detail-data">
+    <label for="name">Calle:</label>
+    <input name="name" type="text" pattern="[A-Za-zÀ-ÿ ]{2,50}" [(ngModel)]="shippingDetails.street" required>
+  </div>
+  <div class="detail-data">
+    <label for="name">Número:</label>
+    <input name="name" type="number" pattern="[0-9]{1,5}" [(ngModel)]="shippingDetails.door" required>
+  </div>
+  <div class="detail-data">
+    <label for="name">Código Postal:</label>
+    <input name="name" type="number" pattern="[0-9]{5}" [(ngModel)]="shippingDetails.zip" required>
+  </div>
+  <div class="detail-data">
+    <label for="name">Provincia:</label>
+    <input name="name" type="text" pattern="[A-Za-zÀ-ÿ ]{2,50}" [(ngModel)]="shippingDetails.province" required>
+  </div>
+  <button class="create-button" (click)="sendShippingDetails(shippingDetails)">COMPRAR</button>
+</div>

@@ -1,0 +1,37 @@
+label {
+  font-weight: bold;
+}
+
+input:invalid {
+  border: 2px solid #ff0000;
+}
+
+.total-price {
+  text-align: center;
+}
+
+.shipping {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.detail-data {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.create-button {
+  margin-top: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 5px;
+  background-color: rgb(114, 235, 114);
+}

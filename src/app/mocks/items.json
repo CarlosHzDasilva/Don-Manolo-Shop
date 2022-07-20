@@ -1,0 +1,83 @@
+{
+  "item-list": [
+    {
+      "id": 1,
+      "name": "Artefacto extraño",
+      "description": "Un artefacto muy extraño.",
+      "stock": 1,
+      "price": 150,
+      "expirationTime": "2150-10-25",
+      "image": "artefacto1.jpg",
+      "selected": false,
+      "quantity": 0
+    },
+    {
+      "id": 2,
+      "name": "Artefactos menos extraños",
+      "description": "Unos artefactos menos extraños, son bastante bonitos.",
+      "stock": 7,
+      "price": 75,
+      "expirationTime": "2150-10-22",
+      "image": "artefacto2.jpg",
+      "selected": false,
+      "quantity": 0
+    },
+    {
+      "id": 3,
+      "name": "Navaja gnómica",
+      "description": "Seguro que quieres una por su resonador armónico... O quizás por su rascaespaldas.",
+      "stock": 25,
+      "price": 18.95,
+      "expirationTime": null,
+      "image": "navaja.jpg",
+      "selected": false,
+      "quantity": 0
+    },
+    {
+      "id": 4,
+      "name": "Vial de antimateria",
+      "description": "Solo puedes comprar esto si te lo ha recetado tu médico. Se vende en viales de 1 mg.",
+      "stock": 3,
+      "price": 59290000000,
+      "expirationTime": "2025-10-29",
+      "image": "antimateria.jpg",
+      "selected": false,
+      "quantity": 0
+    },
+    {
+      "id": 5,
+      "name": "Poncho andino",
+      "description": "Un poncho de lana de llama, protege del frío y del calor, y tiene un estampado maravilloso.",
+      "stock": 12,
+      "price": 30,
+      "expirationTime": null,
+      "image": "poncho.jpg",
+      "selected": false,
+      "quantity": 0
+    },
+    {
+      "name": "Jóvenes birmanos",
+      "description": "Buenos para la minería del coltán. Todos son mayores de edad.",
+      "price": 1500,
+      "stock": 32,
+      "image": "default.jpg",
+      "selected": false,
+      "quantity": 0,
+      "expirationTime": null,
+      "id": 7
+    }
+  ],
+  "the-box": [
+    {
+      "id": 3,
+      "name": "La caja",
+      "description": "Pueden elegir entre la lavadora o la secadora que les muestra el atractivo Smithers... O pueden cambiar ambas cosas por lo que hay en esta caja.",
+      "stock": 1,
+      "price": 0,
+      "expirationTime": null,
+      "image": "caja.jpg",
+      "selected": false,
+      "quantity": 0
+    }
+  ]
+}

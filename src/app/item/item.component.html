@@ -1,0 +1,25 @@
+<div class="item-card" (mouseover)="itemSelected(item)" (mouseout)="itemSelected(item)" [class.selected]="item.selected" [class.out-of-stock]="item.stock <= 0">
+
+  <img class="item-image" src="../../assets/{{item.image}}" [alt]="item.name">
+  <h3>{{item.name | uppercase}}</h3>
+  <div>
+    <p><strong>Descripción:</strong> {{item.description}}</p>
+    <p><strong>Precio:</strong> {{item.price | currency:'EUR':'symbol':'1.2-2'}}</p>
+    <p>{{item.price | exchange:'USD' | currency:'USD':'symbol':'1.2-2'}} | {{item.price | exchange:'GBP' | currency:'GBP':'symbol':'1.2-2'}}</p>
+  </div>
+  <div class="button-group">
+    <!-- [disabled]="theBox[0].stock === 0" -->
+    <button (click)="downQuantity(item)" [disabled]="item.quantity === 0">-</button>
+    <input type="number" placeholder="0" [(ngModel)]="item.quantity" (blur)="itemCheck(item)">
+    <button (click)="upQuantity(item)" [disabled]="item.stock === 0">+</button>
+  </div>
+  <div class="item-price-expiration" [class.out-of-stock]="item.stock <= 0">
+    <p *ngIf="item.stock > 0"><strong>Stock:</strong> {{item.stock}}</p>
+    <p *ngIf="item.stock === 0"><strong>Fuera de Stock</strong></p>
+    <p *ngIf="item.expirationTime !== null"><strong>Fecha de caducidad:</strong> {{item.expirationTime | date:'dd-MM-yyyy' }}</p>
+    <p *ngIf="item.expirationTime === null"><strong>Fecha de caducidad:</strong> Nunca :)</p>
+  </div>
+  <button class="dangerous-button" (click)="emitDelete(item)">BORRAR ITEM</button>
+  <button class="create-button" (click)="navigateToEdit(item.id)">EDITAR ITEM</button>
+  <button class="create-button" (click)="emitCart(item)">AÑADIR AL CARRITO</button>
+</div>
